@@ -207,3 +207,43 @@ a.menu {
     display: flex;
     align-items: center;
 }
+
+/* banner section */
+section.banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 50vh;
+    background-color: #ffffff;
+    background-image: url("../image/game.jpg");
+    background-size: 118%;
+    background-position: top 0 right 38%;
+    background-repeat: no-repeat;
+    background-color: #eeefef;
+}
+
+section.banner .quote {
+    text-align: center;
+    background-color: #f5f6f6;
+    color: #0F1111 !important;
+    padding: 10px 14px !important;
+    width: 95%;
+    margin: 0 auto;
+    align-self: center;
+    margin-top: 150px;
+}
+
+section.banner .quote span {
+    font-size: .9em;
+}
+
+section.banner .quote a {
+    color: #007185;
+    text-decoration: none;
+}
+
+section.banner .quote a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    color: #C7511F;
+}
