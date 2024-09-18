@@ -247,3 +247,42 @@ section.banner .quote a:hover {
     cursor: pointer;
     color: #C7511F;
 }
+
+/* Card Section */
+section.cards {
+    width: 100%;
+    margin: 15px auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+div.card {
+    max-width: 274px;
+    padding: 0 20px;
+    background-color: #fff;
+    margin: 10px 0;
+}
+
+div.card h2 {
+    padding: 15px 0;
+    font-size: 1.2rem;
+    text-align: left;
+}
+
+div.card img {
+    width: 100%
+}
+
+
+div.card a:nth-child(3) {
+    font-size: .9rem;
+    text-decoration: none;
+    color: #007185;
+    display: block;
+    padding: 14px 0;
+}
+
+div.card a:hover {
+    color: #C7511F;
+}
