@@ -286,3 +286,42 @@ div.card a:nth-child(3) {
 div.card a:hover {
     color: #C7511F;
 }
+
+/* Special features */
+h2 section.Special_features {
+    display: flex;
+    flex-direction: column;
+}
+
+div.features {
+    width: 95%;
+    margin: 15px auto;
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+div.features h2 {
+    margin: 10px 0 0;
+    font-size: 1.4rem;
+}
+
+div.feature {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.item,
+.new-item {
+    max-width: 270px;
+    max-height: 250px;
+    padding: 10px;
+}
+
+.item img {
+    width: 100%
+}
+
+.new-item img {
+    width: 75%
+}
