@@ -194,6 +194,11 @@
         max-width: 20%;
         margin: 15px 17px;
     }
+
+     /* footer Section */
+     div.list {
+        margin: 10px 50px;
+    }
 }
 
 @media (max-width:677px) {
@@ -269,6 +274,20 @@
         padding: 0 14px;
     }
 
+    /* footer Section */
+    div.icons .icon {
+        margin: 0
+    }
+
+    div.pic {
+        display: none;
+    }
+
+    div.amazon_details {
+        margin: 0;
+    }
+
+    /* footer end parts */
 }
 
 @media (max-width:479px) {
