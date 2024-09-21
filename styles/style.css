@@ -325,3 +325,127 @@ div.feature {
 .new-item img {
     width: 75%
 }
+
+/* customer viewed items on my browsing history */
+.customer_views_item {
+    background-color: #fff;
+    padding: 40px 0px 25px;
+    margin: 12px 0 0;
+}
+
+.customer_views_item .customer_views {
+    border: 1px solid #DDD;
+    border-radius: 5px;
+    padding: 0 30px;
+}
+
+.customer_views .views {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 0 30px;
+    flex-wrap: wrap;
+}
+
+div.headline {
+    display: flex;
+}
+
+div.headline p {
+    text-align: right;
+    padding: 20px 0;
+    width: 20%;
+    font-size: .9rem;
+
+}
+
+.customer_views h2 {
+    font-size: 1.1rem;
+    padding: 20px 0;
+    letter-spacing: .8px;
+    width: 80%;
+    justify-content: space-between;
+}
+
+.customer_views .views .view {
+    max-width: 14%;
+    /* border:1px solid black */
+}
+
+.customer_views .views .view img {
+    width: 100%;
+}
+
+.customer_views .views .view a.desc {
+    font-size: .9rem;
+    text-decoration: none;
+    color: #007185;
+    display: block;
+    /* padding:14px 0; */
+}
+
+.view a {
+    text-decoration: none;
+    ;
+}
+
+div.rate {
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: #007185;
+}
+
+div.rate i {
+    font-size: .9rem;
+    color: #ffa41c;
+}
+
+a.price span:nth-child(1) {
+    color: black;
+    font-size: .8rem;
+}
+
+a.price span:nth-child(2) {
+    color: black;
+    font-size: 1.1rem;
+}
+
+div.ads {
+    font-size: .7rem;
+    margin: 4px 0
+}
+
+/* Sign in Section */
+div.sign_in {
+    border-top: 1px solid #DDD;
+    text-align: center;
+    padding-top: 37px;
+    padding-bottom: 18px;
+}
+
+div.sign_in a {
+    text-decoration: none;
+}
+
+div.sign_in .btn {
+    margin: 5px 0px;
+    padding: 5px 92px;
+    background-image: linear-gradient(#ffd978, #ffc83e);
+    border-radius: 3px;
+    font-weight: 600;
+    font-size: .8rem;
+    border: 1.4px solid #e6a400;
+    text-shadow: 0 1px 0 #e6a400;
+    cursor: pointer;
+}
+
+div.title_sign {
+    font-size: .8rem;
+}
+
+div.Sign_up {
+    font-size: .7rem;
+}
+
+div.Sign_up a {
+    color: #007185
+}

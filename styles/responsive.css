@@ -26,6 +26,20 @@
     div.card h2 {
         font-size: 1rem;
     }
+
+     /* customer viewed items on my browsing history */
+     .customer_views .views .view {
+        max-width: 20%;
+        margin: 15px;
+    }
+
+    .customer_views .views .view img {
+        width: 90%;
+    }
+
+    .customer_views .views .view a.desc {
+        font-size: .9rem;
+    }
 }
 
 
@@ -174,6 +188,12 @@
     section.banner {
         height: 42vh
     }
+
+    /* customer viewed items on my browsing history */
+    .customer_views .views .view {
+        max-width: 20%;
+        margin: 15px 17px;
+    }
 }
 
 @media (max-width:677px) {
@@ -243,6 +263,12 @@
     div.card {
         max-width: 185px;
     }
+
+     /* customer viewed items on my browsing history */
+     .customer_views_item .customer_views {
+        padding: 0 14px;
+    }
+
 }
 
 @media (max-width:479px) {
@@ -265,5 +291,24 @@
     /* banner section */
     section.banner {
         height: 25vh
+    }
+
+     /* customer viewed items on my browsing history */
+     .customer_views .views .view {
+        margin: 9px 39px;
+    }
+
+    div.rate i {
+        font-size: .6rem;
+        color: #ffa41c;
+    }
+}
+
+@media (max-width:292px) {
+    /* customer viewed items on my browsing history */
+
+    div.rate i {
+        font-size: .4rem;
+        color: #ffa41c;
     }
 }
