@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="./styles/responsive.css">
 </head>
 
-<body style="max-width: 1440px;margin: auto;">
+<body style="max-width: 1600px;margin: auto;">
   <!-- Header section   -->
   <header>
     <nav>
@@ -50,10 +50,28 @@
         </div>
         <div class="search">
           <div class="gift">
-            <select>
-              <option value="all">All</option>
-              <option value="All Departments">All Departments</option>
-            </select>
+            All <span id="drop_arrow" class="material-symbols-outlined" style="font-size: 14px; color: black">
+              arrow_drop_down</span>
+            <div class="dropdown" style="display: none;">
+              <option>All Departments</option>
+              <option>Arts & Crafts</option>
+              <option>Automative</option>
+              <option>Baby</option>
+              <option>Beauty & Personal Care</option>
+              <option>Books</option>
+              <option>Boy's Fashion</option>
+              <option>Computers</option>
+              <option>Deals</option>
+              <option>Digital Music</option>
+              <option>Electronics</option>
+              <option>Girl's Fashion</option>
+              <option>Health & Household</option>
+              <option>Home & Kitchen</option>
+              <option>Industrial & Scientific</option>
+              <option>Kindle Store</option>
+              <option>Luggage</option>
+              <option>Men's Fashion</option>
+            </div>
           </div>
           <input type="text" placeholder="Search Amazon" />
           <div class="search_icon">
@@ -113,9 +131,13 @@
       </div>
     </nav>
   </header>
+  <div class="cover"></div>
   <main>
     <!-- Banner Section    -->
     <section class="banner">
+      <a href="#" class="slides">
+        <img src="./image/game_banner.jpg" alt="game_banner" />
+      </a>
       <div class="quote">
         <span>You are on amazon.com. You can also shop on Amazon India for
           millions of products with fast local delivery.
@@ -124,253 +146,253 @@
     </section>
     <!-- content section -->
     <section class="content">
-    <!-- Card Section   -->
-    <section class="cards">
-      <div class="card">
-        <h2>Deals in Pcs</h2>
-        <a href="#"><img src="./image/Pcs.jpg" alt="Pcs pic" /></a>
-        <a href="#">Shop now</a>
-      </div>
+      <!-- Card Section   -->
+      <section class="cards">
+        <div class="card">
+          <h2>Deals in Pcs</h2>
+          <a href="#"><img src="./image/Pcs.jpg" alt="Pcs pic" /></a>
+          <a href="#">Shop now</a>
+        </div>
 
-      <div class="card">
-        <h2>Toys under $25</h2>
-        <a href="#"><img src="./image/toys.jpg" alt="toys pic" /></a>
-        <a href="#">Shop now</a>
-      </div>
-      <div class="card">
-        <h2>Small gifts under $20</h2>
-        <a href="#"><img src="./image/gift.jpg" alt="gift pic" /></a>
-        <a href="#">Shop now</a>
-      </div>
+        <div class="card">
+          <h2>Toys under $25</h2>
+          <a href="#"><img src="./image/toys.jpg" alt="toys pic" /></a>
+          <a href="#">Shop now</a>
+        </div>
+        <div class="card">
+          <h2>Small gifts under $20</h2>
+          <a href="#"><img src="./image/gift.jpg" alt="gift pic" /></a>
+          <a href="#">Shop now</a>
+        </div>
 
-      <div class="card">
-        <h2>Holiday deals in fashion</h2>
-        <a href="#"><img src="./image/fashion.jpg" alt="fashion pic" /></a>
-        <a href="#">Shop now</a>
-      </div>
+        <div class="card">
+          <h2>Holiday deals in fashion</h2>
+          <a href="#"><img src="./image/fashion.jpg" alt="fashion pic" /></a>
+          <a href="#">Shop now</a>
+        </div>
 
-      <div class="card">
-        <h2>For your Fitness Needs</h2>
-        <a href="#"><img src="./image/fitness.jpg " alt="fitness pic" /></a>
-        <a href="#">Shop now</a>
-      </div>
+        <div class="card">
+          <h2>For your Fitness Needs</h2>
+          <a href="#"><img src="./image/fitness.jpg " alt="fitness pic" /></a>
+          <a href="#">Shop now</a>
+        </div>
 
-      <div class="card">
-        <h2>Discover fashion trends</h2>
-        <a href="#"><img src="./image/trends.jpg" alt="toys pic" /></a>
-        <a href="#">Shop now</a>
-      </div>
+        <div class="card">
+          <h2>Discover fashion trends</h2>
+          <a href="#"><img src="./image/trends.jpg" alt="toys pic" /></a>
+          <a href="#">Shop now</a>
+        </div>
 
-      <div class="card">
-        <h2>Shop activity trackers and smartwatches</h2>
-        <a href="#"><img src="./image/watch.jpg" alt="gift pic" /></a>
-        <a href="#">Shop now</a>
-      </div>
+        <div class="card">
+          <h2>Shop activity trackers and smartwatches</h2>
+          <a href="#"><img src="./image/watch.jpg" alt="gift pic" /></a>
+          <a href="#">Shop now</a>
+        </div>
 
-      <div class="card">
-        <h2>Laptops for every need</h2>
-        <a href="#"><img src="./image/laptop2.jpg" alt="laptop pic" /></a>
-        <a href="#">Shop now</a>
-      </div>
-    </section>
+        <div class="card">
+          <h2>Laptops for every need</h2>
+          <a href="#"><img src="./image/laptop2.jpg" alt="laptop pic" /></a>
+          <a href="#">Shop now</a>
+        </div>
+      </section>
 
-    <!-- Special features  -->
-    <section class="Special_features">
-      <!-- First features  -->
-      <div class="features">
-        <h2>Popular products in Beauty internationally</h2>
-        <div class="feature">
-          <div class="item">
-            <a href="#"><img src="./image/popular_product1.jpg" alt="cartoon pic" />
-            </a>
-          </div>
-          <div class="item">
-            <a href="#"><img src="./image/popular_product2.jpg" alt="cartoon pic" /></a>
-          </div>
-          <div class="item">
-            <a href="#">
-              <img src="./image/popular_product3.jpg" alt="cartoon pic" />
-            </a>
-          </div>
-          <div class="item">
-            <a href="#"><img src="./image/popular_product4.jpg" alt="cartoon pic" /></a>
-          </div>
-          <div class="item">
-            <a href="#"><img src="./image/popular_product5.jpg" alt="cartoon pic" /></a>
-          </div>
-          <div class="item">
-            <a href="#"><img src="./image/popular_product6.jpg" alt="cartoon pic" /></a>
+      <!-- Special features  -->
+      <section class="Special_features">
+        <!-- First features  -->
+        <div class="features">
+          <h2>Popular products in Beauty internationally</h2>
+          <div class="feature">
+            <div class="item">
+              <a href="#"><img src="./image/popular_product1.jpg" alt="cartoon pic" />
+              </a>
+            </div>
+            <div class="item">
+              <a href="#"><img src="./image/popular_product2.jpg" alt="cartoon pic" /></a>
+            </div>
+            <div class="item">
+              <a href="#">
+                <img src="./image/popular_product3.jpg" alt="cartoon pic" />
+              </a>
+            </div>
+            <div class="item">
+              <a href="#"><img src="./image/popular_product4.jpg" alt="cartoon pic" /></a>
+            </div>
+            <div class="item">
+              <a href="#"><img src="./image/popular_product5.jpg" alt="cartoon pic" /></a>
+            </div>
+            <div class="item">
+              <a href="#"><img src="./image/popular_product6.jpg" alt="cartoon pic" /></a>
+            </div>
           </div>
         </div>
-      </div>
-      <!-- Second Special features -->
+        <!-- Second Special features -->
 
-      <div class="features">
-        <h2>Best Sellers in Toys & Games</h2>
-        <div class="feature">
-          <div class="item">
-            <a href="#"><img src="./image/best_Seller1.jpg" alt="cartoon pic" />
-            </a>
-          </div>
-          <div class="item">
-            <a href="#"><img src="./image/best_Seller2.jpg" alt="cartoon pic" /></a>
-          </div>
-          <div class="item">
-            <a href="#"><img src="./image/best_Seller3.jpg" alt="cartoon pic" /></a>
-          </div>
-          <div class="item">
-            <a href="#"><img src="./image/best_Seller4.jpg" alt="cartoon pic" /></a>
-          </div>
-          <div class="item">
-            <a href="#"><img src="./image/best_Seller5.jpg" alt="cartoon pic" /></a>
-          </div>
-          <div class="item">
-            <a href="#"><img src="./image/best_Seller6.jpg" alt="cartoon pic" /></a>
+        <div class="features">
+          <h2>Best Sellers in Computers & Accessories</h2>
+          <div class="feature">
+            <div class="item">
+              <a href="#"><img src="./image/best_Seller1.jpg" alt="cartoon pic" />
+              </a>
+            </div>
+            <div class="item">
+              <a href="#"><img src="./image/best_Seller2.jpg" alt="cartoon pic" /></a>
+            </div>
+            <div class="item">
+              <a href="#"><img src="./image/best_Seller3.jpg" alt="cartoon pic" /></a>
+            </div>
+            <div class="item">
+              <a href="#"><img src="./image/best_Seller4.jpg" alt="cartoon pic" /></a>
+            </div>
+            <div class="item">
+              <a href="#"><img src="./image/best_Seller5.jpg" alt="cartoon pic" /></a>
+            </div>
+            <div class="item">
+              <a href="#"><img src="./image/best_Seller6.jpg" alt="cartoon pic" /></a>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Card Section   -->
-    <section class="cards">
-      <div class="card">
-        <h2>Deals on books</h2>
-        <a href="#"><img src="./image/books.jpg" alt="books pic" /></a>
-        <a href="#">See more</a>
-      </div>
+      <!-- Card Section   -->
+      <section class="cards">
+        <div class="card">
+          <h2>Deals on books</h2>
+          <a href="#"><img src="./image/books.jpg" alt="books pic" /></a>
+          <a href="#">See more</a>
+        </div>
 
-      <div class="card">
-        <h2>Gifts for the gamer</h2>
-        <a href="#"><img src="./image/gifts_gamer.jpg" alt="toys pic" /></a>
-        <a href="#">Shop now</a>
-      </div>
-      <div class="card">
-        <h2>Beauty steals under $25</h2>
-        <a href="#"><img src="./image/beauty.jpg" alt="gift pic" /></a>
-        <a href="#">Shop now</a>
-      </div>
+        <div class="card">
+          <h2>Gifts for the gamer</h2>
+          <a href="#"><img src="./image/gifts_gamer.jpg" alt="toys pic" /></a>
+          <a href="#">Shop now</a>
+        </div>
+        <div class="card">
+          <h2>Beauty steals under $25</h2>
+          <a href="#"><img src="./image/beauty.jpg" alt="gift pic" /></a>
+          <a href="#">Shop now</a>
+        </div>
 
-      <div class="card">
-        <h2>Home décor under $50</h2>
-        <a href="#"><img src="./image/home_decor.jpg" alt="fashion pic" /></a>
-        <a href="#">Shop now</a>
-      </div>
-    </section>
+        <div class="card">
+          <h2>Home décor under $50</h2>
+          <a href="#"><img src="./image/home_decor.jpg" alt="fashion pic" /></a>
+          <a href="#">Shop now</a>
+        </div>
+      </section>
 
-    <!-- Special features  -->
-    <section class="Special_features">
-      <!-- First features  -->
-      <div class="features">
-        <h2>Best Sellers in Books</h2>
-        <div class="feature">
-          <div class="new-item">
-            <a href="#"><img src="./image/seller_book1.jpg" alt="cartoon pic" />
-            </a>
-          </div>
-          <div class="new-item">
-            <a href="#"><img src="./image/seller_book2.jpg" alt="cartoon pic" /></a>
-          </div>
-          <div class="new-item">
-            <a href="#">
-              <img src="./image/seller_book3.jpg" alt="cartoon pic" />
-            </a>
-          </div>
-          <div class="new-item">
-            <a href="#"><img src="./image/seller_book4.jpg" alt="cartoon pic" /></a>
-          </div>
-          <div class="new-item">
-            <a href="#"><img src="./image/seller_book5.jpg" alt="cartoon pic" /></a>
-          </div>
-          <div class="new-item">
-            <a href="#"><img src="./image/seller_book6.jpg" alt="cartoon pic" /></a>
+      <!-- Special features  -->
+      <section class="Special_features">
+        <!-- First features  -->
+        <div class="features">
+          <h2>Best Sellers in Books</h2>
+          <div class="feature">
+            <div class="new-item">
+              <a href="#"><img src="./image/seller_book1.jpg" alt="cartoon pic" />
+              </a>
+            </div>
+            <div class="new-item">
+              <a href="#"><img src="./image/seller_book2.jpg" alt="cartoon pic" /></a>
+            </div>
+            <div class="new-item">
+              <a href="#">
+                <img src="./image/seller_book3.jpg" alt="cartoon pic" />
+              </a>
+            </div>
+            <div class="new-item">
+              <a href="#"><img src="./image/seller_book4.jpg" alt="cartoon pic" /></a>
+            </div>
+            <div class="new-item">
+              <a href="#"><img src="./image/seller_book5.jpg" alt="cartoon pic" /></a>
+            </div>
+            <div class="new-item">
+              <a href="#"><img src="./image/seller_book6.jpg" alt="cartoon pic" /></a>
+            </div>
           </div>
         </div>
-      </div>
-      <!-- Second Special features -->
+        <!-- Second Special features -->
 
-      <div class="features">
-        <h2>Best Sellers in Home & Kitchen</h2>
-        <div class="feature">
-          <div class="item">
-            <a href="#"><img src="./image/home_kitchen.jpg" alt="cartoon pic" />
-            </a>
-          </div>
-          <div class="item">
-            <a href="#"><img src="./image/home_kitchen2.jpg" alt="cartoon pic" /></a>
-          </div>
-          <div class="item">
-            <a href="#"><img src="./image/home_kitchen3.jpg" alt="cartoon pic" /></a>
-          </div>
-          <div class="item">
-            <a href="#"><img src="./image/home_kitchen4.jpg" alt="cartoon pic" /></a>
-          </div>
-          <div class="item">
-            <a href="#"><img src="./image/home_kitchen5.jpg" alt="cartoon pic" /></a>
-          </div>
-          <div class="item">
-            <a href="#"><img src="./image/home_kitchen6.jpg" alt="cartoon pic" /></a>
+        <div class="features">
+          <h2>Best Sellers in Home & Kitchen</h2>
+          <div class="feature">
+            <div class="item">
+              <a href="#"><img src="./image/home_kitchen.jpg" alt="cartoon pic" />
+              </a>
+            </div>
+            <div class="item">
+              <a href="#"><img src="./image/home_kitchen2.jpg" alt="cartoon pic" /></a>
+            </div>
+            <div class="item">
+              <a href="#"><img src="./image/home_kitchen3.jpg" alt="cartoon pic" /></a>
+            </div>
+            <div class="item">
+              <a href="#"><img src="./image/home_kitchen4.jpg" alt="cartoon pic" /></a>
+            </div>
+            <div class="item">
+              <a href="#"><img src="./image/home_kitchen5.jpg" alt="cartoon pic" /></a>
+            </div>
+            <div class="item">
+              <a href="#"><img src="./image/home_kitchen6.jpg" alt="cartoon pic" /></a>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Card Section   -->
-    <section class="cards">
-      <div class="card">
-        <h2>Shop holiday gift guides in amazon</h2>
-        <a href="#"><img src="./image/holiday.jpg" alt="books pic" /></a>
-        <a href="#">See more</a>
-      </div>
+      <!-- Card Section   -->
+      <section class="cards">
+        <div class="card">
+          <h2>Shop holiday gift guides in amazon</h2>
+          <a href="#"><img src="./image/holiday.jpg" alt="books pic" /></a>
+          <a href="#">See more</a>
+        </div>
 
-      <div class="card">
-        <h2>Upgrade your office furniture </h2>
-        <a href="#"><img src="./image/furniture.jpg" alt="toys pic" /></a>
-        <a href="#">Shop now</a>
-      </div>
-      <div class="card">
-        <h2>New arrivals in Toys on Diwali</h2>
-        <a href="#"><img src="./image/new_toys.jpg" alt="gift pic" /></a>
-        <a href="#">Shop now</a>
-      </div>
+        <div class="card">
+          <h2>Upgrade your office furniture </h2>
+          <a href="#"><img src="./image/furniture.jpg" alt="toys pic" /></a>
+          <a href="#">Shop now</a>
+        </div>
+        <div class="card">
+          <h2>New arrivals in Toys on Diwali</h2>
+          <a href="#"><img src="./image/new_toys.jpg" alt="gift pic" /></a>
+          <a href="#">Shop now</a>
+        </div>
 
-      <div class="card">
-        <h2>Deals in Tools and Home Improvement</h2>
-        <a href="#"><img src="./image/tools.jpg " alt="fashion pic" /></a>
-        <a href="#">Shop now</a>
-      </div>
-    </section>
-    
-     <!-- Special features  -->
-     <section class="Special_features">
-      <!-- First features  -->
-      <div class="features">
-        <h2>Best Sellers in Clothing</h2>
-        <div class="feature">
-          <div class="new-item">
-            <a href="#"><img src="./image/Clothing_Shoe1.jpg" alt="cartoon pic" />
-            </a>
-          </div>
-          <div class="new-item">
-            <a href="#"><img src="./image/Clothing_Shoe2.jpg" alt="cartoon pic" /></a>
-          </div>
-          <div class="new-item">
-            <a href="#">
-              <img src="./image/Clothing_Shoe3.jpg" alt="cartoon pic" />
-            </a>
-          </div>
-          <div class="new-item">
-            <a href="#"><img src="./image/Clothing_Shoe4.jpg" alt="cartoon pic" /></a>
-          </div>
-          <div class="new-item">
-            <a href="#"><img src="./image/Clothing_Shoe5.jpg" alt="cartoon pic" /></a>
-          </div>
-          <div class="new-item">
-            <a href="#"><img src="./image/Clothing_Shoe6.jpg" alt="cartoon pic" /></a>
+        <div class="card">
+          <h2>Deals in Tools and Home Improvement</h2>
+          <a href="#"><img src="./image/tools.jpg " alt="fashion pic" /></a>
+          <a href="#">Shop now</a>
+        </div>
+      </section>
+
+      <!-- Special features  -->
+      <section class="Special_features">
+        <!-- First features  -->
+        <div class="features">
+          <h2>Best Sellers in Clothing</h2>
+          <div class="feature">
+            <div class="new-item">
+              <a href="#"><img src="./image/Clothing_Shoe1.jpg" alt="cartoon pic" />
+              </a>
+            </div>
+            <div class="new-item">
+              <a href="#"><img src="./image/Clothing_Shoe2.jpg" alt="cartoon pic" /></a>
+            </div>
+            <div class="new-item">
+              <a href="#">
+                <img src="./image/Clothing_Shoe3.jpg" alt="cartoon pic" />
+              </a>
+            </div>
+            <div class="new-item">
+              <a href="#"><img src="./image/Clothing_Shoe4.jpg" alt="cartoon pic" /></a>
+            </div>
+            <div class="new-item">
+              <a href="#"><img src="./image/Clothing_Shoe5.jpg" alt="cartoon pic" /></a>
+            </div>
+            <div class="new-item">
+              <a href="#"><img src="./image/Clothing_Shoe6.jpg" alt="cartoon pic" /></a>
+            </div>
           </div>
         </div>
-      </div>
+      </section>
     </section>
-</section>
     <!-- customer viewed items on my browsing history -->
     <section class="customer_views_item">
       <div class="customer_views">
@@ -512,7 +534,6 @@
               <span>New customer?</span> <a href="#">Start here.</a>
             </div>
           </div>
-      </div>
     </section>
     </section>
   </main>

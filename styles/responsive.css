@@ -1,10 +1,6 @@
 @media (max-width:1230px) {
 
-    /* Header section */
-    div.search_icon {
-        width: 16%;
-    }
-
+    /* card Section */
     div.card h2 {
         font-size: 1rem;
     }
@@ -16,13 +12,7 @@
 
 @media (max-width:1130px) {
 
-    /* Header section */
-    div.search_icon {
-        width: 14%;
-    }
-
     /* Card Section */
-
     div.card {
         width: 31.8%;
     }
@@ -274,7 +264,7 @@
     }
 
     div.search_icon {
-        width: 9%;
+        width: 25px;
         height: 6vh;
     }
 
@@ -309,10 +299,12 @@
 }
 
 @media (max-width:594px) {
+
     /* header section */
     div.search_icon {
         width: 11%;
     }
+
     /* banner section */
     section.banner {
         height: 30vh
@@ -355,10 +347,6 @@
     }
 
     /* banner section */
-    section.banner {
-        height: 42vh
-    }
-
     section.banner .quote {
         display: none
     }
