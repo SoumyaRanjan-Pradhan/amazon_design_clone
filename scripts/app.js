@@ -12,7 +12,6 @@ const toggleDropdown = () => {
 gift.addEventListener("click", toggleDropdown);
 drop_arrow.addEventListener("click", toggleDropdown);
 document.addEventListener("click", () => {
-  console.log(event.target);
   if (event.target !== gift && event.target !== drop_arrow) {
     gift.style.outline = "none";
     dropdown.style.display = "none";
@@ -35,6 +34,27 @@ input.addEventListener("blur", () => {
   search.style.outline = "none";
   cover.style.height = 0;
 });
+
+//sidebar section
+const close_icon = document.querySelector(".close_icon");
+const side_menubar = document.querySelector("div.side_menubar");
+const sidebar_cover = document.querySelector("div.sidebar_cover");
+const menu = document.querySelector("a.menu");
+
+const toggleSidebar = () => {
+  side_menubar.style.transform = "translateX(-400px)";
+  sidebar_cover.style.display = "none";
+  document.body.style.overflow = "auto";
+};
+
+menu.addEventListener("click", () => {
+  side_menubar.style.transform = "translateX(0)";
+  sidebar_cover.style.display = "block";
+  close_icon.style.display = "block";
+  document.body.style.overflow = "hidden";
+});
+close_icon.addEventListener("click", toggleSidebar);
+sidebar_cover.addEventListener("click", toggleSidebar);
 // banner section
 const banner_path = "./image/";
 const banner_slider = [
