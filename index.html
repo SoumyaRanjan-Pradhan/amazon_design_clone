@@ -9,11 +9,12 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL&icon_names=close" />
   <link rel="stylesheet" href="./styles/style.css" />
   <link rel="stylesheet" href="./styles/responsive.css">
 </head>
 
-<body style="max-width: 1600px;margin: auto;">
+<body>
   <!-- Header section   -->
   <header>
     <nav>
@@ -23,7 +24,7 @@
             <span class="material-symbols-outlined">menu</span>
           </a>
           <div href="#" class="top_logo">
-            <img src="./image/Amazon-Logo.jpg" alt="amazon_logo" />
+            <img src="./image/amazonLogo.png" alt="amazon_logo" />
           </div>
         </div>
 
@@ -42,7 +43,7 @@
           <img src="./image/Amazon-Logo.jpg" alt="amazon_logo" />
         </div>
         <div class="location">
-          <span class="deliver">Deliver to</span>
+          <span class="deliver custom_style">Deliver to</span>
           <div class="country">
             <span class="material-symbols-outlined" id="loc_icon">location_on</span>
             <span class="india">India</span>
@@ -50,7 +51,7 @@
         </div>
         <div class="search">
           <div class="gift">
-            All <span id="drop_arrow" class="material-symbols-outlined" style="font-size: 14px; color: black">
+            All <span id="drop_arrow" class="material-symbols-outlined" style="font-size: 14px; color: #636563">
               arrow_drop_down</span>
             <div class="dropdown" style="display: none;">
               <option>All Departments</option>
@@ -130,6 +131,78 @@
         <a href="#">Video</a>
       </div>
     </nav>
+    <div class="side_menubar">
+      <a href="#" class="profile">
+        <i class="fa-solid fa-user"></i> 
+        <span id="hello">Hello, sign in</span> 
+      </a>
+      <div class="sidebar_content">
+        <div class="digital_content">
+          <h3>Digital Content & Devices</h3>
+           <a href="#" class="sidebar_list"><span>Amazon Music</span>
+            <i class="fa-solid fa-angle-right custom_edit"></i>
+          </a>
+          <a href="#" class="sidebar_list"><span>Kindle E-readers & Books</span>
+            <i class="fa-solid fa-angle-right custom_edit"></i>
+          </a>
+          <a href="#" class="sidebar_list"><span>Amazon Appstore</span>
+            <i class="fa-solid fa-angle-right custom_edit"></i>
+          </a>
+        </div>
+        <p></p>
+        <div class="digital_content">
+          <h3>Shop by Department</h3>
+           <a href="#" class="sidebar_list"><span>Electronics</span>
+            <i class="fa-solid fa-angle-right custom_edit"></i>
+          </a>
+          <a href="#" class="sidebar_list"><span>Computers</span>
+            <i class="fa-solid fa-angle-right custom_edit"></i>
+          </a>
+          <a href="#" class="sidebar_list"><span>Smart Home</span>
+            <i class="fa-solid fa-angle-right custom_edit"></i>
+          </a>
+          <a href="#" class="sidebar_list"><span>Arts & Crafts</span>
+            <i class="fa-solid fa-angle-right custom_edit"></i>
+          </a>
+        </div>
+        <p></p>
+        <div class="digital_content">
+          <h3>Programs & Features</h3>
+           <a href="#" class="sidebar_list"><span>Gift Cards</span>
+            <i class="fa-solid fa-angle-right custom_edit"></i>
+          </a>
+          <a href="#" class="sidebar_list"><span>Shop By Interest</span>
+            <i class="fa-solid fa-angle-right custom_edit"></i>
+          </a>
+          <a href="#" class="sidebar_list"><span>Amazon Live</span>
+            <i class="fa-solid fa-angle-right custom_edit"></i>
+          </a>
+          <a href="#" class="sidebar_list"><span>International Shopping</span>
+            <i class="fa-solid fa-angle-right custom_edit"></i>
+          </a>
+        </div>
+        <p></p>
+        <div class="digital_content">
+          <h3>Help & Settings</h3>
+           <a href="#" class="sidebar_list">Your Account
+          </a>
+          <a href="#" class="sidebar_custom_list"><i class="fa-solid fa-globe" style="margin-right: 10px;
+    color: gray;"></i>English
+          </a>
+          <a href="#" class="sidebar_custom_list"><img src="./image/flag.jpg" alt="flag pic" style="margin-right: 10px;">United States
+          </a>
+          <a href="#" class="sidebar_list">Customer Service
+          </a>
+          <a href="#" class="sidebar_list">Sign in
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="sidebar_cover">
+      <span class="material-symbols-outlined close_icon">
+        close
+        </span>
+    </div>
   </header>
   <div class="cover"></div>
   <main>

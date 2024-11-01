@@ -56,6 +56,10 @@
         color: white;
     }
 
+    div.bottom_nav a {
+        border: none;
+    }
+
     .sidebar {
         display: flex;
         align-items: center;
