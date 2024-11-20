@@ -36,6 +36,12 @@ input.addEventListener("blur", () => {
 });
 
 //sidebar section
+const banner_height = document.querySelector("body > main > section.banner");
+const image_height = document.querySelector(
+  "body > main > section.banner > a > img"
+);
+console.log(`banner height ${banner_height.offsetHeight}`);
+console.log(`image height ${image_height.offsetHeight}`);
 const close_icon = document.querySelector(".close_icon");
 const side_menubar = document.querySelector("div.side_menubar");
 const sidebar_cover = document.querySelector("div.sidebar_cover");
@@ -74,21 +80,69 @@ const banner_slider = [
   },
   { banner_name: "game_banner", banner_src: banner_path + "game_banner.jpg" },
 ];
+const mobBanner_path = "./image/mobile/";
+const mobBanner_Slider = [
+  {
+    banner_name: "beauty_banner",
+    banner_src: mobBanner_path + "beauty_banner.jpg",
+  },
+  {
+    banner_name: "toys_banner",
+    banner_src: mobBanner_path + "toys_banner.jpg",
+  },
+  {
+    banner_name: "kitchen_banner",
+    banner_src: mobBanner_path + "kitchen_banner.jpg",
+  },
+  {
+    banner_name: "homeDecore_banner",
+    banner_src: mobBanner_path + "homeDecore_banner.jpg",
+  },
+  {
+    banner_name: "game_banner",
+    banner_src: mobBanner_path + "game_banner.jpg",
+  },
+];
 
 let banner_section = document.querySelector("a.slides img");
-let i = 0;
-setInterval(() => {
-  while (i < banner_slider.length) {
-    banner_section.src = `${banner_slider[i].banner_src}`;
-    banner_section.alt = `${banner_slider[i].banner_name}`;
-    // console.log(i);
-    i++;
-    if (i === banner_slider.length) {
-      i = 0;
+
+let screen_width = window.innerWidth;
+if (screen_width <= 972) {
+  banner_section.src = `${
+    mobBanner_Slider[mobBanner_Slider.length - 1].banner_src
+  }`;
+  banner_section.alt = `${
+    mobBanner_Slider[mobBanner_Slider.length - 1].banner_name
+  }`;
+  let i = 0;
+  setInterval(() => {
+    while (i < mobBanner_Slider.length) {
+      banner_section.src = `${mobBanner_Slider[i].banner_src}`;
+      banner_section.alt = `${mobBanner_Slider[i].banner_name}`;
+      i++;
+      if (i === mobBanner_Slider.length) {
+        i = 0;
+      }
+      break;
     }
-    break;
-  }
-}, 3000);
+  }, 3000);
+  console.log(`Width: ${screen_width}`);
+} else {
+  let i = 0;
+  setInterval(() => {
+    while (i < banner_slider.length) {
+      banner_section.src = `${banner_slider[i].banner_src}`;
+      banner_section.alt = `${banner_slider[i].banner_name}`;
+      // console.log(i);
+      i++;
+      if (i === banner_slider.length) {
+        i = 0;
+      }
+      break;
+    }
+  }, 3000);
+}
+
 // When the user clicks back to top the button, scroll to the top of the document
 function topFunction() {
   document.body.scrollTop = 0;

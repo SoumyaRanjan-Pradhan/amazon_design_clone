@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans+JP:wght@100..900&family=Poppins&family=Roboto&display=swap');
+
 
 * {
   margin: 0;
@@ -42,16 +44,28 @@ div.top_most_nav img {
 
 .top_nav {
   color: white;
+  font-family: "Lato", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10.5vh;
+  padding: 0 12px;
+  gap: 20px;
+}
+
+div.custom_decorate {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 10.5vh;
 }
 
 .top_nav .logo {
-  width: 10%;
+  width: 125px;
   border: 1px solid #131921;
   cursor: pointer;
+  display: flex;
+  height: 7.7vh;
+  align-items: center;
 }
 
 .top_nav .logo:hover {
@@ -60,6 +74,8 @@ div.top_most_nav img {
 
 .top_nav .logo img {
   width: 100%;
+  flex-shrink: 0;
+  height: fit-content;
 }
 
 .country #loc_icon {
@@ -73,7 +89,8 @@ div.location {
   flex-shrink: 0;
   border: 1px solid #131921;
   cursor: pointer;
-  padding: 12px;
+  padding: 8px 12px;
+  justify-content: center;
 }
 
 div.location:hover {
@@ -88,8 +105,10 @@ div.country {
 .location .deliver {
   padding-left: 18px;
   color: #ccc;
-  font-size: 0.8rem;
+  font-size: 12px;
   letter-spacing: 0.2px;
+  font-weight: 600;
+  font-family: "Raleway", sans-serif;
 }
 
 .custom_style {
@@ -97,15 +116,16 @@ div.country {
 }
 
 div.country .india {
-  font-size: 0.8rem;
+  font-size: 14px;
   font-weight: 700;
-  letter-spacing: 1px;
+  letter-spacing: .3px;
+  font-family: "Lato", sans-serif;
 }
 
 div.search {
   display: flex;
   align-items: center;
-  width: 48%;
+  width: -webkit-fill-available;
   height: 6.4vh;
   border-radius: 4px;
   border: none;
@@ -185,6 +205,13 @@ div.search_icon #custom_search {
   font-size: 1.5rem;
 }
 
+div.custom_design {
+  display: flex;
+  justify-content: space-around;
+  align-items: end;
+  flex-shrink: 0;
+}
+
 div.language {
   display: flex;
   align-items: flex-end;
@@ -214,7 +241,7 @@ div.language span img {
 div.cart {
   display: flex;
   align-items: flex-end;
-  padding: 10px;
+  padding: 10px 8px;
   border: 1px solid #131921;
   cursor: pointer;
 }
@@ -238,12 +265,14 @@ div.bottom_nav {
 
 div.bottom_nav a {
   flex-shrink: 0;
+  font-family: "Raleway", sans-serif;
   text-decoration: none;
   color: #ffffff;
-  font-size: 0.9rem;
+  font-size: 14px;
   padding: 8px 10px;
   border: 1px solid #232f3e;
   border-radius: 2px;
+  font-weight: 500;
 }
 
 div.bottom_nav a:hover {
@@ -255,10 +284,27 @@ div.nav-res {
   height: 0;
 }
 
+div.nav-res::-webkit-scrollbar {
+  width: 4px;
+  height: 0px;
+}
+
+/* Track (background of the scrollbar) */
+div.nav-res::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+/* Thumb (the draggable part) */
+div.nav-res::-webkit-scrollbar-thumb {
+  background: #aaa;
+  width: 6px;
+  height: 6px;
+  cursor: pointer;
+}
+
 a.menu {
   display: flex;
   align-items: center;
-  font-family: "Raleway", sans-serif;
   font-weight: 600;
 }
 
