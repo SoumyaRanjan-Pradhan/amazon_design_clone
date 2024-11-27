@@ -47,20 +47,142 @@ const side_menubar = document.querySelector("div.side_menubar");
 const sidebar_cover = document.querySelector("div.sidebar_cover");
 const menu = document.querySelector("a.menu");
 
+menu.addEventListener("click", () => {
+  if (window.innerWidth > 1032) {
+    side_menubar.style.transform = "translateX(0)";
+    sidebar_cover.style.display = "block";
+    close_icon.style.display = "block";
+    document.body.style.overflow = "hidden";
+  }
+});
+
 const toggleSidebar = () => {
   side_menubar.style.transform = "translateX(-400px)";
   sidebar_cover.style.display = "none";
   document.body.style.overflow = "auto";
 };
-
-menu.addEventListener("click", () => {
-  side_menubar.style.transform = "translateX(0)";
-  sidebar_cover.style.display = "block";
-  close_icon.style.display = "block";
-  document.body.style.overflow = "hidden";
-});
 close_icon.addEventListener("click", toggleSidebar);
 sidebar_cover.addEventListener("click", toggleSidebar);
+
+//side menubar in mobile-view
+const menu_bar = document.querySelector(".menu_bar");
+const small_sidebar = document.querySelector(".small_sidebar");
+const mobileSide_menubar = document.querySelector(".mobileSide_menubar");
+const mobileSidebar_cover = document.querySelector(".mobileSidebar_cover");
+const mobile_close_icon = document.querySelector(".mobile_close_icon");
+const see_all = document.querySelector(".see_all");
+const all_menubar = document.querySelector(".all_menubar");
+const black_friday = document.querySelector("#black_friday");
+const other_options = document.querySelector("#other_options");
+const gift_cards = document.querySelector("#gift_cards");
+const see_less = document.querySelector(".see_less");
+
+menu_bar.addEventListener("click", () => {
+  small_sidebar.style.transform = "translateX(0)";
+  document.body.style.overflow = "hidden";
+});
+const toggleMobile_Sidebar = () => {
+  small_sidebar.style.transform = "translateX(-100%)";
+  document.body.style.overflow = "auto";
+};
+mobile_close_icon.addEventListener("click", toggleMobile_Sidebar);
+mobileSidebar_cover.addEventListener("click", toggleMobile_Sidebar);
+
+const black_friday_Deals = [
+  "Amazon Music",
+  "Prime Video",
+  "Books",
+  "Echo & Alexa",
+  "Fire Tablets",
+  "Fire TV",
+  "Kindle",
+  "Audible Books & Originals",
+  "Clothing, Shoes,Jewelry & Watches",
+  "Electronics",
+  "Pffice & School Supplies",
+];
+const Gift_Cards = [
+  "Amazon Appstore",
+  "Movies, Music & Games",
+  "Computers",
+  "Home, Garden & Pets",
+  "Handmade",
+  "Beauty, Health & Personal Care",
+  "Food & Grocery",
+  "Toys, Kids & Baby",
+  "Sports & Outdoors",
+  "Automative",
+  "Home Services",
+];
+const Others_Deals = [
+  "Shop By Interest",
+  "Premium Fashion",
+  "Amazon Business",
+  "Amazon Custom",
+  "Amazon Haul",
+  "Amazon Live",
+  "Amazon Music",
+  "Amazon Outlet",
+  "Medical Care & Pharmacy",
+  "Amazon Physical Stores",
+  "Amazon Trade-in",
+  "Your Product Support",
+  "Amazon Second Chance",
+  "Amazon Resale",
+  "Audible",
+  "Baby Registry",
+  "Climate Pledge Friendly",
+  "Credit & Payment Products",
+  "Customers' Most-Loved Styles",
+  "Your Essentials",
+  "Find a Gift",
+  "Gift Cards",
+  "Home Services",
+  "Luxury Stores",
+  "Our Brands",
+  "Pet Profile",
+  "Prime",
+  "Amazon Photos",
+  "Prime Video",
+  "Purchase Reminders",
+  "Sell products on Amazon",
+  "Add Prime to your site",
+  "Subscribe & Save",
+  "The Drop",
+  "Black Friday Deals",
+  "Wedding Registry",
+];
+
+black_friday_Deals.map((value) => {
+  black_friday.innerHTML += `<li><a href="#" class="sidebar_list"><span>${value}</span>
+      <i class="fa-solid fa-angle-right custom_edit"></i>
+    </a></li>`;
+});
+
+Gift_Cards.map((value) => {
+  gift_cards.innerHTML += `<li><a href="#" class="sidebar_list"><span>${value}</span>
+      <i class="fa-solid fa-angle-right custom_edit"></i>
+    </a></li>`;
+});
+
+Others_Deals.map((value) => {
+  other_options.innerHTML += `<li>
+      <a href="#" class="sidebar_option_list">
+       ${value}
+    </a>
+  </li>`;
+});
+
+see_all.addEventListener("click", () => {
+  all_menubar.classList.add("show");
+  see_all.style.display = "none";
+});
+
+see_less.addEventListener("click", () => {
+  all_menubar.classList.remove("show");
+  see_all.style.display = "block";
+});
+
 // banner section
 const banner_path = "./image/";
 const banner_slider = [
