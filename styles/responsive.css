@@ -423,6 +423,11 @@
         margin: 0 10px;
     }
 
+    /* mobile side bar */
+    ul.mobileSide_menubar li a {
+        font-size: 15px;
+    }
+
     /* card section */
     section.cards {
         margin: 8px auto;
