@@ -40,13 +40,51 @@ const banner_height = document.querySelector("body > main > section.banner");
 const image_height = document.querySelector(
   "body > main > section.banner > a > img"
 );
-console.log(`banner height ${banner_height.offsetHeight}`);
-console.log(`image height ${image_height.offsetHeight}`);
 const close_icon = document.querySelector(".close_icon");
 const side_menubar = document.querySelector("div.side_menubar");
 const sidebar_cover = document.querySelector("div.sidebar_cover");
 const menu = document.querySelector("a.menu");
+const shop_dept = document.querySelector(".shop_dept");
+const shop_depart_list = document.querySelector("#shop_depart_list");
+const see_more = document.querySelector(".see_more");
+const see_decrease = document.querySelector(".see_decrease");
+const desktop_ruller = document.querySelector(".desktop_ruller");
+const Shop_Department = [
+  "Automotive",
+  "Baby",
+  "Beauty and Personal Care",
+  "Women's Fashion",
+  "Men's Fashion",
+  "Girls' Fashion",
+  "Boys' Fashion",
+  "Health and Household",
+  "Home and Kitchen",
+  "Industrial and Scientific",
+  "Luggage",
+  "Movies & Television",
+  "Pet supplies",
+  "Software",
+  "Sports and Outdoors",
+  "Tools & Home Improvement",
+  "Toys and Games",
+  "Video Games",
+];
+Shop_Department.map((value) => {
+  shop_depart_list.innerHTML += `<a href="#" class="sidebar_list"><span>${value}</span>
+              <i class="fa-solid fa-angle-right custom_edit"></i>
+            </a>`;
+});
 
+see_more.addEventListener("click", () => {
+  shop_dept.classList.add("reveal");
+  see_more.style.display = "none";
+  desktop_ruller.style.display = "block";
+});
+see_decrease.addEventListener("click", () => {
+  shop_dept.classList.remove("reveal");
+  see_more.style.display = "flex";
+  desktop_ruller.style.display = "none";
+});
 menu.addEventListener("click", () => {
   if (window.innerWidth > 1032) {
     side_menubar.style.transform = "translateX(0)";

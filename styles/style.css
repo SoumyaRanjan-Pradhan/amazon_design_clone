@@ -468,8 +468,10 @@ div.top_department {
   transition: all .5s ease;
 }
 
-div.side_menubar p {
-  border: .1px solid #adb6b7;
+div.side_menubar .desktop_divider {
+  border-bottom: 1px solid #d5dbdb;
+  padding: 0;
+  margin: 5px 0;
 }
 
 div.sidebar_cover,
@@ -588,6 +590,7 @@ mob-profile a {
 .digital_content h3 {
   padding-left: 32px;
   margin-bottom: 10px;
+  font-size: 18px;
 }
 
 .sidebar_list {
@@ -602,13 +605,47 @@ mob-profile a {
   transition: all .1s ease;
 }
 
+.desktop_ruller {
+  border-bottom: 1px solid #d5dbdb;
+  padding: 0;
+  margin: 5px 0;
+  margin-left: 36px;
+  margin-right: 20px;
+  display: none;
+}
+
+.see_more,
+.see_low,
+.see_down {
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.see_down {
+  gap: 5px;
+}
+
+.see_down .custom_edit {
+  margin-top: 4px;
+}
+
+.secrete {
+  display: none;
+}
+
+.reveal {
+  display: block;
+}
+
 .sidebar_list:hover,
 .sidebar_option_list:hover,
 .sidebar_custom_list:hover {
   background-color: rgba(172, 188, 188, 0.299)
 }
 
-.sidebar_list:hover .custom_edit {
+.sidebar_list:hover .custom_edit,
+.sidebar_option_list:hover .custom_edit,
+.sidebar_list:hover .custom_less {
   color: #111111;
 }
 
@@ -625,10 +662,15 @@ mob-profile a {
   width: 18px;
 }
 
-.custom_edit {
-  font-size: 16px;
+.custom_edit,
+.custom_less {
+  font-size: 17px;
   color: #879596;
   transition: all .1s ease;
+}
+
+.custom_less {
+  transform: rotate(180deg);
 }
 
 /* banner section */
